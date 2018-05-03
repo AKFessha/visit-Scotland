@@ -1,0 +1,31 @@
+body{
+	
+}
+
+.container1{
+display: flex;
+flex-direction: row;
+ justify-content: space-between;	
+}
+.container2{
+display: flex;
+flex-direction: row;	
+ justify-content: space-between;
+}
+.icons{
+	display: inline block;
+	height: 20px;
+	
+}
+.icons img{
+	width: 25px;
+	height: 25px;
+}
+#search{
+margin-left: 200px;
+}
+.gallery img{
+display :inline block;
+width: 32%;
+length: 32%;
+}

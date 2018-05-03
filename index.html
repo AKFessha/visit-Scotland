@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="eng"> <title>Visit Scotland | Alba </title> 
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<h1> Visit Scotland | Alba</h1> 
+<div class="icons"> 
+<img src ="icon.png">
+<img src ="icon.png">
+<img src ="icon.png">
+<input id="search" type="text" placeholder="Enter username.." name="search">
+                    <button id="searchBtn" type="submit">
+                    <i class="fa fa-search"></i>
+
+</div>
+<video width= "80%" height="50%" controls>
+<source src="movie.mp4" type= "video/mp4">
+<source src="movie.wmv" type= "video/wmv">
+
+</video>
+<div class="container1"> 
+                  <div> 
+                     <h2> Our History</h2>
+                     <p> I am doing great thanks god.I am doing great thanks god. I am doing great thanks god</P>
+                  </div>
+                  <div> 
+                     <h2>Our Future </h2>
+                     <p> I am doing great thanks god. I am doing great thanks god.I am doing great thanks god</P>
+                  </div>
+
+</div>
+
+<div class="gallery"> 
+<h2> Gallery </h2>
+<img src ="icon.png">
+<img src ="icon.png">
+<img src ="icon.png">
+
+
+</div>
+
+
+<div class="container1"> 
+                  <div> 
+                     <h2> Our History</h2>
+					 <form>
+					 <label> Name:             </label>
+					 <input  type="name" placeholder="Write your name" maxlength="20"> 
+					 </br>
+					  </br>
+					 
+					  <label> Email:             </label>
+					 <input   type="email" placeholder="Write your email" maxlength="20">
+					 </br>
+					  </br>
+					 
+					  <label> Message:             </label>
+					  </br>
+			
+					  
+					 <textarea  width="25" length="10"> 
+
+					 </textarea>
+					 
+					 </form>
+                     
+                  </div>
+                  <div id="map" style="width: 50%; height:300px;"> 
+                     <h2>Find Us </h2>
+					  <script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(55.8404355, -4.33655239999996), 
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+                     
+                  </div>
+
+</div>
+
+<script src="map.js "> </script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</body>
+</html>
+
+
+
