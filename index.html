@@ -3,99 +3,111 @@
 
 <head lang="en">
   <title> visit Scotland </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
   <h1> Visit Scotland </h1>
   <hr>
-  <div class="social">
+  <div class="nav">
 
-    <img src="icon.png">
+    <a href="#video">
+      <img src="vid.png"> </a>
 
-    <img src="icon.png">
+    <a href="#about">
+      <img src="hs.png"> </a>
 
-    <img src="icon.png">
+    <a href="#gallery">
+      <img src="cam.png"> </a>
 
-    <img src="icon.png">
+    <a href="#contact">
+      <img src="cont.png"> </a>
 
-    <img src="icon.png">
-    <div id="search">
-      <input type="text">
-      <button> Search</button>
-    </div>
-    <hr>
+    <a href="#contact">
+      <img src="map.png"> </a>
+    <input type="text" placeholder="Search..">
+
   </div>
-  </div>
-  <div>
-    <video class="video" controls>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
-    </video>
-  </div>
-  <div class="container1">
+  <hr>
+  <section id="video">
     <div>
-      <h2> Our History </h2>
-      <p>Scotland, the U.K.’s northernmost country, is a land of mountain wildernesses such as the Cairngorms and Northwest
-        Highlands, interspersed with glacial glens (valleys) and lochs (lakes). Its major cities are Edinburgh, the capital,
-        with its iconic hilltop castle, and Glasgow, famed for its vibrant cultural scene. Scotland is also famous for golf,
-        the game first played at the Old Course at St Andrews in the 1400s. </p>
+      <video controls class="video">
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      </video>
     </div>
-    <div>
-      <h2> Our Future</h2>
-      <p> Scotland, the U.K.’s northernmost country, is a land of mountain wildernesses such as the Cairngorms and Northwest
-        Highlands, interspersed with glacial glens (valleys) and lochs (lakes). Its major cities are Edinburgh, the capital,
-        with its iconic hilltop castle, and Glasgow, famed for its vibrant cultural scene. Scotland is also famous for golf,
-        the game first played at the Old Course at St Andrews in the 1400s.</p>
-    </div>
-  </div>
-  <div class="container2">
-    <h2> Gallery</h2>
-
-    <img src="https://i2-prod.scotlandnow.dailyrecord.co.uk/incoming/article4926376.ece/ALTERNATES/s1023/The-Launch-of-the-Kelpies-Credit-Kenny-Lam.jpg">
-
-    <img src="http://travelandsport.com/wp-content/uploads/2017/09/Edinburgh-Castle.jpg">
-
-    <img src="https://i.telegraph.co.uk/multimedia/archive/03375/scotland-glasgow_3375875b.jpg">
-
-  </div>
-  <div class="container3">
-    <div id="form">
-      <h2> Contact Us </h2>
-      <form>
-        Full name:
-        <br>
-        <input type="text" size="50">
-        <br>
-        <br> Email:
-        <br>
-        <input type="text" size="50">
-        <br>
-        <br> Message:
-        <br>
-        <textarea type="text" rows="5" cols="48">
-          </textarea>
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-    <div id="map">
-      <h2> Find Us</h2>
-      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCnXuqhxLLhTMRwpmo0NWuSd1s1fSrpIng'></script>
-      <div style='overflow:hidden;height:300px;width:520px;'>
-        <div id='gmap_canvas' style='height:275px;width:520px;'></div>
-        <style>
-          #gmap_canvas img {
-            max-width: none!important;
-            background: none!important
-          }
-        </style>
+  </section>
+  <section id="about">
+    <div class="container1">
+      <div>
+        <h2> Our History </h2>
+        <p>Scotland, the U.K.’s northernmost country, is a land of mountain wildernesses such as the Cairngorms and Northwest
+          Highlands, interspersed with glacial glens (valleys) and lochs (lakes). Its major cities are Edinburgh, the capital,
+          with its iconic hilltop castle, and Glasgow, famed for its vibrant cultural scene. Scotland is also famous for
+          golf, the game first played at the Old Course at St Andrews in the 1400s. </p>
       </div>
-      <a href='https://embed-map.org/'>add map to website</a>
-      <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=aa49a62cfb04b786adfce0767d13f1a26298b36c'></script>
-      <script type='text/javascript'>function init_map() { var myOptions = { zoom: 12, center: new google.maps.LatLng(55.85953600000001, -4.3028865), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(55.85953600000001, -4.3028865) }); infowindow = new google.maps.InfoWindow({ content: '<strong>Visit Scotland</strong><br>15 Burndyke Court<br>G51 2BG Glasgow<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script> </div>
-  </div>
+      <div>
+        <h2> Our Future</h2>
+        <p> Scotland, the U.K.’s northernmost country, is a land of mountain wildernesses such as the Cairngorms and Northwest
+          Highlands, interspersed with glacial glens (valleys) and lochs (lakes). Its major cities are Edinburgh, the capital,
+          with its iconic hilltop castle, and Glasgow, famed for its vibrant cultural scene. Scotland is also famous for
+          golf, the game first played at the Old Course at St Andrews in the 1400s.</p>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <div class="container2">
+      <h2> Gallery</h2>
+
+      <img src="https://i2-prod.scotlandnow.dailyrecord.co.uk/incoming/article4926376.ece/ALTERNATES/s1023/The-Launch-of-the-Kelpies-Credit-Kenny-Lam.jpg">
+
+      <img src="http://travelandsport.com/wp-content/uploads/2017/09/Edinburgh-Castle.jpg">
+
+      <img src="https://i.telegraph.co.uk/multimedia/archive/03375/scotland-glasgow_3375875b.jpg">
+
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container3">
+      <div id="form">
+        <h2> Contact Us </h2>
+        <form>
+          Full name:
+          <br>
+          <input type="text" size="50">
+          <br>
+          <br> Email:
+          <br>
+          <input type="text" size="50">
+          <br>
+          <br> Message:
+          <br>
+          <textarea type="text" rows="5" cols="48">
+          </textarea>
+          <br>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div id="map">
+        <h2> Find Us</h2>
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCnXuqhxLLhTMRwpmo0NWuSd1s1fSrpIng'></script>
+        <div style='overflow:hidden;height:300px;width:520px;'>
+          <div id='gmap_canvas' style='height:275px;width:520px;'></div>
+          <style>
+            #gmap_canvas img {
+              max-width: none!important;
+              background: none!important
+            }
+          </style>
+        </div>
+        <a href='https://embed-map.org/'>add map to website</a>
+        <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=aa49a62cfb04b786adfce0767d13f1a26298b36c'></script>
+        <script type='text/javascript'>function init_map() { var myOptions = { zoom: 12, center: new google.maps.LatLng(55.85953600000001, -4.3028865), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(55.85953600000001, -4.3028865) }); infowindow = new google.maps.InfoWindow({ content: '<strong>Visit Scotland</strong><br>15 Burndyke Court<br>G51 2BG Glasgow<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script> </div>
+    </div>
+  </section>
 </body>
 
 </html>
